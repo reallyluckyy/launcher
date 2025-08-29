@@ -1,0 +1,7 @@
+.vscode
+.sconsign.dblite
+/bin
+*.obj
+*.pdb
+src/resources.cpp
+src/resources.hpp
