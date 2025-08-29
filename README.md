@@ -1,16 +1,12 @@
 
 # CODMVM Launcher
 
-A simple auto-updating launcher for all of the [CODMVM mods](https://codmvm.com/mods).
+An auto-updating launcher for all of the [CODMVM mods](https://codmvm.com/mods).
+
+<img width="766" height="339" alt="image" src="https://github.com/user-attachments/assets/9110776c-880b-4732-a72c-9a1744210d11" />
 
 ## Download
 If you're a user looking to download the latest version, see [codmvm.com/launcher](https://codmvm.com/launcher)
-
-## Features
-- Modern UI with custom graphics
-- Mod selection and management
-- Auto-updating capability
-- Logging and status display
 
 ## Building
 The build tool used is [SCons](https://scons.org/).
