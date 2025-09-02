@@ -12,7 +12,7 @@ namespace mod
     std::string current_mod_name;
     LauncherState launcher_state = LauncherState::Initial;
 
-    bool use_iwxmvm = true;
+    bool use_iwxmvm = false;
 
     std::array<std::string, 8> supported_mods = {
         "IW1MVM",
@@ -360,6 +360,12 @@ namespace mod
 
             current_mod_name = name;
             cached_server_hash.clear();
+
+            if (name.compare("IW3MVM") == 0) {
+                use_iwxmvm = true;
+            } else {
+                use_iwxmvm = false;
+            }
         }
         else
         {

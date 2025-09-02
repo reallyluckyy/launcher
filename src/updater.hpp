@@ -1,7 +1,7 @@
 
 namespace updater
 {
-    constexpr std::uint32_t CURRENT_VERSION = 160;
+    constexpr std::uint32_t CURRENT_VERSION = 161;
 
     enum class UpdateStatus
     {
