@@ -98,9 +98,9 @@ OUTPUT_NAME = "CODMVM_LAUNCHER"
 #
 # Binaries available at 
 # https://slproweb.com/products/Win32OpenSSL.html
-OPENSSL_INCLUDE_PATH = "C:/Program Files/OpenSSL-Win32/include"
-OPENSSL_LIB_PATH = "C:/Program Files/OpenSSL-Win32/lib/VC/static"
-OPENSSL_LIBRARIES = ["libssl32MT", "libcrypto32MT"]
+OPENSSL_INCLUDE_PATH = os.environ.get("OPENSSL_INCLUDE_PATH", "C:/Program Files/OpenSSL-Win32/include")
+OPENSSL_LIB_PATH = os.environ.get("OPENSSL_LIB_PATH", "C:/Program Files/OpenSSL-Win32/lib/VC/static")
+OPENSSL_LIBRARIES = os.environ.get("OPENSSL_LIBRARIES", "libssl32MT;libcrypto32MT").split(";")
 
 source_files = Glob("src/*.cpp")
 source_files.extend(Glob("src/*/*.cpp"))
